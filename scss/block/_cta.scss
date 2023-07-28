@@ -1,0 +1,81 @@
+@import "./global";
+
+.cta {
+  margin-top: 96px;
+  width: 100%;
+  height: 384px;
+  border-radius: 12px;
+  background-image: url(/images/cta__banner.png);
+
+  .cta__info {
+    opacity: 0;
+    h2 {
+      width: 631px;
+      color: #fff;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 57.6px;
+      margin: 0 auto;
+      padding-top: 93px;
+      margin-bottom: 32px;
+    }
+
+    &__box {
+      width: 348px;
+      height: 51px;
+      display: flex;
+      gap: 32px;
+      margin: 0 auto;
+    }
+
+    &__btn1 {
+      display: inline-flex;
+      padding: 16px 32px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 4px;
+      background: var(--green-primary, #70c174);
+      color: #fff;
+      text-align: right;
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+    }
+
+    &__btn2 {
+      display: inline-flex;
+      padding: 16px 32px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 4px;
+      background: #fff;
+      color: var(--primary-text, #1d2130);
+      text-align: right;
+      font-family: 'Roboto',sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      border: none;
+    }
+  }
+
+  &:hover {
+    .cta__info {
+      opacity: 1;
+      width: 100%;
+      height: 384px;
+      border-radius: 12px;
+      cursor: pointer;
+      background-image: url(../../images/Tint11.png)
+    }
+  }
+}
